@@ -20,6 +20,8 @@ Search existing issues first. Include the current behavior, expected behavior, r
 
 `needs-triage` means the request awaits analysis. `planned` means a technical plan exists. `approved-for-core` authorizes promotion to the main repository. `duplicate`, `invalid`, and `wontfix` close triage with an explicit reason.
 
+Language labels identify the primary language of each request: `lang:en`, `lang:pt-BR`, or `lang:es-MX`. Issues may contain additional languages, but the label should reflect the language used for the main description.
+
 ## Repository policies
 
 Read [Contributing](CONTRIBUTING.md), [Security](SECURITY.md), [Support](SUPPORT.md), and the [Code of Conduct](CODE_OF_CONDUCT.md) before participating.

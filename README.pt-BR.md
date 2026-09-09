@@ -20,6 +20,8 @@ Pesquise as issues existentes antes de abrir uma nova. Inclua comportamento atua
 
 `needs-triage` indica que a solicitação aguarda análise. `planned` indica que existe um plano técnico. `approved-for-core` autoriza a promoção ao repositório principal. `duplicate`, `invalid` e `wontfix` encerram a triagem com um motivo explícito.
 
+As labels de idioma identificam a língua principal de cada solicitação: `lang:en`, `lang:pt-BR` ou `lang:es-MX`. Uma issue pode conter outros idiomas, mas a label deve refletir o idioma usado na descrição principal.
+
 ## Políticas do repositório
 
 Leia [Contribuindo](CONTRIBUTING.pt-BR.md), [Segurança](SECURITY.pt-BR.md), [Suporte](SUPPORT.pt-BR.md) e o [Código de Conduta](CODE_OF_CONDUCT.pt-BR.md) antes de participar.
