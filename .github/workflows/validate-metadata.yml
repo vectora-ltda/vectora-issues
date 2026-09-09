@@ -1,0 +1,25 @@
+name: Validate repository metadata
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate issue form and configuration YAML
+        shell: bash
+        run: |
+          ruby -ryaml -e '
+            paths = Dir[".github/**/*.yml"] + Dir[".github/**/*.yaml"] + [".coderabbit.yaml"]
+            paths.each do |path|
+              YAML.load_file(path)
+              puts "validated #{path}"
+            end
+          '

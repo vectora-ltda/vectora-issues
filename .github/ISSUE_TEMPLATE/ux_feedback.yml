@@ -1,0 +1,28 @@
+name: UX feedback
+description: Report usability, accessibility, interface, or wording problems.
+title: "[UX]: "
+labels:
+  - ux
+  - needs-triage
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: In which flow and for which user does this happen?
+    validations:
+      required: true
+  - type: textarea
+    id: friction
+    attributes:
+      label: Observed difficulty
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+  - type: input
+    id: environment
+    attributes:
+      label: Environment

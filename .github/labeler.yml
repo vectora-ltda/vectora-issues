@@ -1,0 +1,20 @@
+version: 1
+appendOnly: true
+labels:
+  - label: documentation
+    files:
+      - "^(README|CONTRIBUTING|SECURITY|SUPPORT|CODE_OF_CONDUCT)(\\.pt-BR|\\.es-MX)?\\.md$"
+      - "^docs/.*"
+  - label: automation
+    files:
+      - "^\\.github/workflows/.*"
+      - "^\\.github/.*\\.ya?ml$"
+  - label: templates
+    files:
+      - "^\\.github/ISSUE_TEMPLATE/.*"
+  - label: configuration
+    files:
+      - "^\\.coderabbit\\.ya?ml$"
+      - "^\\.github/vectora-review\\.ya?ml$"
+  - label: chore
+    title: "^(chore|ci|docs|refactor|test)(\\(.+\\))?!?:.*"
